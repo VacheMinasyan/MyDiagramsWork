@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "chart.js": "^3.2.1",
+    "chartist": "^0.11.4",
+    "gulp": "^4.0.2",
+    "gulp-pug": "^4.0.1"
+  },
+  "name": "diagrams",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VacheMinasyan/MyDiagramsWork.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VacheMinasyan/MyDiagramsWork/issues"
+  },
+  "homepage": "https://github.com/VacheMinasyan/MyDiagramsWork#readme",
+  "description": ""
+}
