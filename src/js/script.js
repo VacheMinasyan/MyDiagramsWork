@@ -1,76 +1,50 @@
-// метки и три серии данных
-var data = {
-    labels: ['01', '02', '03', '04', '05', '06',"07"],
-    series: [
-      [5, 10, 6, 14, 11, 6],
-      
-
-    ],
-    
-  };
-  
-  // Устанавливаем несколько опцией, меняя настройки по умолчанию
-  var options = {
-    // не отрисовывать точки линейного графика
-    showPoint: false,
-    // Отключение сглаживания линий
-    lineSmooth: false,
-    // Настройки X-оси
-    axisX: {
-      // Отключаем сетку для этой оси
-      showGrid: false,
-      // и не показываем метки
-    //   showLabel: false,
-      
+var ctx = document.getElementById('myChart').getContext('2d');
+Chart.defaults.scale.gridLines.display = false;
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: [1, 2, 3, 4],
+        datasets: [{
+            label: false,
+            data: [0, 200, 500, 1000],
+            backgroundColor: ["rgb(218, 215, 254)"],
+            borderColor: ["blue"],
+            borderWidth: 1,
+            radius: 0,
+        },
+        ]
     },
-    // настройки Y-оси 
-    axisY: {
-      // Смещение от меток
-      offset: 60,
-      // Функция интерполяции метки позволяет менять значение метки,
-      // в текущем примере появляются миллионы "m".
-      labelInterpolationFnc: function(value) {
-        return '$' + value + 'm';
-      }
-    }
-  };
+    options: {
+        plugins: {
+            datalabels: {
 
-  // Не забываем включить третий параметр
-  new Chartist.Line('.ct-chart', data, options);
-  var data = {
-    labels: ['01', '02', '03', '04', '05', '06',"07"],
-    series: [
-      [5, 10, 6, 14, 11, 6],
-      [3, 2, 9, 5, 4, 6],
-     
+            },
+        },
+        legend: {
+            display: false
+        },
+        tooltips: {
+        },
+        scales: {
+            xAxes: [{
+                ticks: {
+                    display: false,
+                    beginAtZero: true,
 
-    ],
-    
-  };
-  
-  // Устанавливаем несколько опцией, меняя настройки по умолчанию
-  var options = {
-    // не отрисовывать точки линейного графика
-    showPoint: false,
-    // Отключение сглаживания линий
-    lineSmooth: false,
-    // Настройки X-оси
-    axisX: {
-      // Отключаем сетку для этой оси
-      showGrid: false,
-      // и не показываем метки
-    //   showLabel: false,
-      
-    },
-    // настройки Y-оси 
-    axisY: {
-      // Смещение от меток
-      offset: 60,
-      // Функция интерполяции метки позволяет менять значение метки,
-      // в текущем примере появляются миллионы "m".
-      labelInterpolationFnc: function(value) {
-        return '$' + value + 'm';
-      }
+                }
+            }],
+            yAxes: [{
+                ticks: {
+                    display: false
+                }
+            }]
+
+        }
+
     }
-  };
-  new Chartist.Line('.ct-golden-section', data, options);
+});
+
+
+
+
+

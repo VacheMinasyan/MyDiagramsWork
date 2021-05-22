@@ -1,15 +1,16 @@
+
 .body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.input:a{
-  border: unset;
-}
+input:focus{outline:none}
 .header {
-  position: relative;
-  left: 96px;
-  /* border: 1px solid black; */
+  position:absolute;
+  left: 98px;
+  min-width: 1410px;
+  border: 1px solid black;
+  top: 0;
   min-height: 77px;
   display: flex;
   justify-content: space-between;
@@ -69,13 +70,14 @@ padding-top: 28px;
 }
 .main {
 }
+
 .aside {
-  position: relative;
-  top: -79px;
+  position: absolute;
+  top: 0;
   left: 0;
   max-width: 96px;
-  /* border:1px solid black; */
-  min-height: 1000px;
+  border:1px solid black;
+  max-height: 1000px;
   
 }
 .images {
@@ -122,4 +124,72 @@ margin-top: 200px;
 }
 .header__search{
   display: flex;
+}
+/* ==========Part Vache  */
+
+.can{
+  /* position: relative; */
+}
+#myChart{
+  /* border: 1px solid blue; */
+ box-sizing: border-box;
+ max-width: 264px;
+  min-height: 218px;
+  margin: 0;
+  
+}
+
+.main {
+    border: 1px solid black;
+    margin:78px 0 0 90px ;
+  max-width: 100%;
+  max-height: 100%;
+}
+.main__author{
+  font-size: 40px;
+  font-weight: 500;
+  font-family: 'DM Sans', sans-serif;
+}
+.main__text{
+  font-size: 14px;
+  color:#959595FF;
+  font-family: 'DM Sans', sans-serif;
+font-weight: 100;
+}
+.main__header {
+  border: 1px solid black;
+
+}
+.main__main {
+  margin-top: 29px;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+
+}
+.main__main>div{
+  margin-left: 40px;
+  max-width: 326px;
+  max-height:360px;
+  border: 4px solid rgb(131, 67, 67);
+}
+.can {
+}
+.footer{
+  border: 3px solid rgb(196, 13, 13);
+  margin:29px 0 0 90px ;
+max-width: 100%;
+max-height: 360px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.footer>div{
+  border: 3px solid rgb(15, 10, 10);
+
+  margin-left: 40px;
+  max-width: 692px;
+  max-height: 360px;
+  border-radius:10px
 }
