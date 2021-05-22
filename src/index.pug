@@ -5,6 +5,9 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="css/style.css")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js") 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
         title Document
     body 
         header.header 
@@ -26,6 +29,18 @@ html(lang="en")
 
 
         main.main 
+            .main__header 
+                h1.main__author Be single minded
+                - var text="Every large design company whether it’s a multi-national branding"
+                p.main__text=text
+            .main__main 
+                .main__canvas 
+                .main__canvas 
+                .main__canvas 
+                    canvas(id="myChart").can
+                .main__canvas 
+                
+                
         aside.aside
             .aside_head 
                 a   
@@ -41,3 +56,6 @@ html(lang="en")
                 a   
                     img(src="img/icon8.png").fot 
         footer.footer
+            .footer__canvas_left
+            .footer__canvas_right 
+        script(src="js/script.js") 

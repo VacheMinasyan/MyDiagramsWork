@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"> </script><link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
   <body> 
@@ -21,7 +23,20 @@
         <div class="header_online plus"><img class="img_plus" src="img/plus.png" alt=""></div>
       </div>
     </header>
-    <main class="main"> </main>
+    <main class="main"> 
+      <div class="main__header"> 
+        <h1 class="main__author">Be single minded</h1>
+        <p class="main__text">Every large design company whether it’s a multi-national branding</p>
+      </div>
+      <div class="main__main"> 
+        <div class="main__canvas"> </div>
+        <div class="main__canvas"> </div>
+        <div class="main__canvas"> 
+          <canvas class="can" id="myChart"></canvas>
+        </div>
+        <div class="main__canvas"> </div>
+      </div>
+    </main>
     <aside class="aside">
       <div class="aside_head"> <a>  <img class="log" src="img/Logo.png"></a></div>
       <div class="images">       
@@ -35,6 +50,10 @@
       </div>
       <div class="aside_footer"> <a>  <img class="fot" src="img/icon8.png"></a></div>
     </aside>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__canvas_left"></div>
+      <div class="footer__canvas_right"> </div>
+    </footer>
+    <script src="js/script.js"> </script>
   </body>
 </html>
