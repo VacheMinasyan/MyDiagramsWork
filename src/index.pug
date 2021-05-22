@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.css")
+        title Document
+    body 
+        header.header 
+            .header__search
+                input(type="search",placeholder="Search").input 
+                img(src="img/Search.png", alt="").header_icon
+            .header_humans 
+                .header_online 
+                    img(src="img/blackboy.png", alt="")
+                    .online
+                .header_online 
+                    img(src="img/bluegirl.png", alt="")
+
+                .header_online 
+                    img(src="img/ochkiboy.png", alt="")
+
+                .header_online.plus
+                    img(src="img/plus.png", alt="").img_plus
+
+
+        main.main 
+        aside.aside
+            .aside_head 
+                a   
+                    img(src="img/Logo.png").log
+            .images        
+                -var names= ["img/icon1.png","img/icon2.png","img/icon3.png","img/icon4.png","img/icon5.png","img/icon6.png","img/icon7.png"]
+                - for (var i = 0; i < names.length; ++i) {
+                .aside__div    
+                     a
+                        img(src=names[i]).img
+                -  }
+            .aside_footer 
+                a   
+                    img(src="img/icon8.png").fot 
+        footer.footer

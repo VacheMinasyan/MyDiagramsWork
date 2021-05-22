@@ -1,0 +1,125 @@
+.body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.input:a{
+  border: unset;
+}
+.header {
+  position: relative;
+  left: 96px;
+  /* border: 1px solid black; */
+  min-height: 77px;
+  display: flex;
+  justify-content: space-between;
+}
+.header_icon{
+z-index: 4444;
+max-width:18px;
+max-height: 18px;
+padding-top: 28px;
+}
+.input {
+  position: absolute;
+  height: 100%;
+  max-width: 500px;
+  padding-left:25px;
+  border: unset;
+  /* border:1px solid black; */
+}
+.header_humans {
+  margin:0 140px 0 0;
+  max-width: 250px;
+  max-height: 70px;
+  box-sizing: border-box;
+  display: flex;
+  /* border: 1px solid black; */
+}
+.header_humans>div{
+  margin-top: 16px;
+  max-height: 44px;
+  min-width: 44px;
+  border-radius: 50%;
+  /* border: 1px solid black; */
+  margin-left: 9px;
+}
+.header_humans>div:hover{
+  border: 1px solid blue;
+}
+.header_online {
+  position: relative;
+}
+.online{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 12px;
+  min-height: 12px;
+  background-color: green;
+  border-radius: 44%;
+}
+.plus{
+  background-color: blue;
+}
+.img_plus{
+  padding: 14px;
+  max-height: 14px;
+  max-width: 14px;
+}
+.main {
+}
+.aside {
+  position: relative;
+  top: -79px;
+  left: 0;
+  max-width: 96px;
+  /* border:1px solid black; */
+  min-height: 1000px;
+  
+}
+.images {
+  margin-top: -36px;
+  /* border:3px solid rgb(173, 49, 49); */
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img{
+  /* border:1px solid black; */
+  margin-top: 84px;
+  min-height: 27px;
+  min-width: 27px;
+
+}
+.log{
+  padding: 40px 0 0 30px ;
+
+  max-height: 36px;
+  max-width: 36px;
+}
+.log,.fot:hover {
+  cursor: pointer;
+}
+.aside_head{
+  border-bottom: 2px solid #CCCCCCFF;
+  min-height: 106px;
+  min-width: 96px;
+}
+.aside_footer{
+margin-top: 200px;
+
+}
+.fot{
+  padding: 0 37px 37px 37px;
+  max-height: 36px;
+  max-width: 36px;
+}
+.img:hover{
+  border: blue;
+  cursor: pointer;
+}
+.header__search{
+  display: flex;
+}
