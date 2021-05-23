@@ -1,16 +1,16 @@
-let ctx = document.getElementById('myChart').getContext('2d');
+let ctx2 = document.getElementById('myChart2').getContext('2d');
 Chart.defaults.scale.gridLines.display = false;
-let myChart = new Chart(ctx, {
+let myChart2 = new Chart(ctx2, {
     type: 'line',
     data: {
         labels: [1, 2, 3, 4],
         datasets: [{
-            label: false,
             data: [0, 200, 500, 1000],
             backgroundColor: ["rgb(218, 215, 254)"],
             borderColor: ["blue"],
             borderWidth: 1,
             radius: 0,
+            // borderRadius:"c"
         },
         ]
     },
@@ -46,14 +46,14 @@ let myChart = new Chart(ctx, {
 // ======================= chart line diagrms ====================
 
 
-let ctx1 = document.getElementById('myChart2').getContext('2d');
+let ctx3 = document.getElementById('myChart3').getContext('2d');
 Chart.defaults.scale.gridLines.display = false;
-let myChart1 = new Chart(ctx1, {
+let myChart3 = new Chart(ctx3, {
     type: 'line',
     data: {
         labels: ["01", "02", "03", "04", "05", "06", "07"],
         datasets: [{
-            label: false,
+            labels: ["Rasless","Awake","Deep"],
             data: [200, 400, 250,100,500,250, 250,250],
             backgroundColor: 'transparent',
             borderColor: ["rgb(67, 57, 242)"],
@@ -112,7 +112,7 @@ let myChart1 = new Chart(ctx1, {
             xAxes: [
                 {
                     ticks: {
-                        // display: false,
+                    
                         beginAtZero: true,
 
                     }
@@ -131,15 +131,10 @@ let myChart1 = new Chart(ctx1, {
 });
 
 // =================== chart circle ===================== 
-
-
-let ctx2 = document.getElementById('myChart3').getContext('2d');
-
-
-let myChart2 = new Chart(ctx2, {
+let ctx = document.getElementById('myChart').getContext('2d');
+let myChart = new Chart(ctx, {
     type: 'pie',
     data: {
-        labels: ["Rasless","Awake","Deep"],
         datasets: [{
             data: [10],
             backgroundColor: [
@@ -155,7 +150,6 @@ let myChart2 = new Chart(ctx2, {
             borderWidth: 1,
         },
             {
-                // data: [10,2,5],
                 backgroundColor: 'white',
                 borderColor: ["white"],
                 borderWidth: 3,
@@ -187,9 +181,124 @@ let myChart2 = new Chart(ctx2, {
 
         ]
     },
-
-
+    options: {
+        legend: {
+            display: false
+        },
+    }
 });
+// =================== chart barrrr =======================
+
+let ctx1 = document.getElementById('myChart1').getContext('2d');
+Chart.defaults.scale.gridLines.display = false;
+let myChart1 = new Chart(ctx1, {
+    type: 'bar',
+    data: {
+        labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        datasets: [
+            {
+                label: 'Restless',
+                data: [75, 100, 65, 80, 90, 55, 110, 85, 50, 95, 45, 110],
+                backgroundColor: "rgb(255, 179, 0)",
+                borderColor: "rgb(255, 179, 0)",
+                borderWidth: 2,
+                borderRadius: 5,
+                hoverBackgroundColor: "red",
+                hoverBorderColor: "rgb(255, 179, 0)",
+                borderSkipped: false,
+            },
+        ],
+    },
+    options: {
+        plugins: {
+            datalabels: {
+            },
+        },
+        legend: {
+            display: false,
+            position: 'top',
+        },
+        tooltips: {
+        },
+        scales: {
+            xAxes: [{
+                ticks: {
+                    display: false,
+                    beginAtZero: true,
+                }
+            }],
+            yAxes: [{
+                ticks: {
+                    display: false
+                }
+            }]
+        }
+    }
+});
+
+// ==================== canvas fb, instagram, twitter ==================
+
+let ctx4 = document.getElementById('myChart5').getContext('2d');
+Chart.defaults.scale.gridLines.display = false;
+let myChart4 = new Chart(ctx4, {
+    type: 'bar',
+    data: {
+        labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        datasets: [
+            {
+                label: 'Twitter',
+                data: [80, 60, 90, 200, 70, 200,200,230,200,240,130,270],
+                backgroundColor: "blue",
+                borderColor: "blue",
+                borderWidth: 1,
+                borderRadius: 5,
+                hoverBackgroundColor: "blue",
+                hoverBorderColor: "blue",
+                borderSkipped: false,
+            },
+            {
+                label: 'Facebook',
+                data: [120, 90, 90, 100, 70, 130, 110, 150, 120, 155, 55, 160],
+                backgroundColor: "green",
+                borderColor: "green",
+                borderWidth: 2,
+                borderRadius: 5,
+                hoverBackgroundColor: "green",
+                hoverBorderColor: "green",
+                borderSkipped: false,
+            },
+            {
+                label: 'Instagram',
+                data: [200, 150, 170, 60, 50, 80, 70, 85, 85, 85, 40, 120],
+                backgroundColor: "rgb(255, 179, 0)",
+                borderColor: "rgb(255, 179, 0)",
+                borderWidth: 2,
+                borderRadius: 5,
+                hoverBackgroundColor: "rgb(255, 179, 0)",
+                hoverBorderColor: "rgb(255, 179, 0)",
+                borderSkipped: false,
+            },
+        ],
+    },
+    options: {
+        tooltips: {
+        },
+       
+        scales: {
+            xAxes: [{
+                stacked:true,
+            }],
+            yAxes: [{
+                stacked:true,
+            }]
+        }
+    }
+});
+
+
+
+
+
 
 
 
