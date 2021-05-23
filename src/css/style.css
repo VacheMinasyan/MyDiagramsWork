@@ -131,12 +131,17 @@ margin-top: 200px;
   /* position: relative; */
 }
 #myChart{
-  /* border: 1px solid blue; */
  box-sizing: border-box;
  max-width: 264px;
   min-height: 218px;
   margin: 0;
   
+}
+#myChart2{
+  box-sizing: border-box;
+  max-width: 326px;
+   min-height: 77px;
+   margin: 0;
 }
 
 .main {
