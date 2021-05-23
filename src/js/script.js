@@ -202,7 +202,7 @@ let myChart1 = new Chart(ctx1, {
                 backgroundColor: "rgb(255, 179, 0)",
                 borderColor: "rgb(255, 179, 0)",
                 borderWidth: 2,
-                borderRadius: 5,
+                borderRadius: 50,
                 hoverBackgroundColor: "red",
                 hoverBorderColor: "rgb(255, 179, 0)",
                 borderSkipped: false,
@@ -294,6 +294,185 @@ let myChart4 = new Chart(ctx4, {
         }
     }
 });
+
+// ========================================================
+let ctx6 = document.getElementById('myChart6').getContext('2d');
+let myChart6 = new Chart(ctx6, {
+    type: 'doughnut',
+    data: {
+        labels: ["Twitter"],
+        datasets: [
+            {
+                data: [67, 33],
+                label: 'Twitter',
+                // data: [45,100],
+                backgroundColor: [
+                    "#3ec556",
+                    "rgb(226, 251, 215)"
+                ],
+                hoverBackgroundColor: [
+                    "#3ec556",
+                    "rgb(226, 251, 215)"
+                ],
+                borderWidth: [
+                    0, 0
+                ]
+            },
+
+
+        ],
+    },
+    options: {
+        cutoutPercentage: 80,
+        animation: {
+            animationRotate: true,
+            duration: 2000
+        },
+        legend: {
+            display: false
+        },
+        tooltips: {
+            enabled: false
+        }
+    }
+
+});
+
+
+// =========================
+let ctx7 = document.getElementById('myChart7').getContext('2d');
+Chart.defaults.scale.gridLines.display = false;
+let myChart7 = new Chart(ctx7, {
+    type: 'doughnut',
+    data: {
+        labels: ["Twitter"],
+        datasets: [
+            {
+                data: [46, 54],
+                label: 'Twitter',
+                // data: [45,100],
+                backgroundColor: [
+                    "rgb(67, 57, 242)",
+                    "rgb(215, 238, 251)"
+                ],
+                hoverBackgroundColor: [
+                    "rgb(67, 57, 242)",
+                    "rgb(218, 215, 254)"
+                ],
+                borderWidth: [
+                    0, 0
+                ]
+            },
+
+
+        ],
+    },
+    options: {
+        cutoutPercentage: 80,
+        animation: {
+            animationRotate: true,
+            duration: 2000
+        },
+        legend: {
+            display: false
+        },
+        tooltips: {
+            enabled: false
+        }
+    }
+
+});
+// ==========================================
+let ctx8 = document.getElementById('myChart8').getContext('2d');
+Chart.defaults.scale.gridLines.display = false;
+let myChart8 = new Chart(ctx8, {
+    type: 'doughnut',
+    data: {
+        labels: ["Twitter"],
+        datasets: [
+            {
+                data: [15, 85],
+                label: 'Twitter',
+                // data: [45,100],
+                backgroundColor: [
+                    "red",
+                    "rgb(251, 215, 221)"
+                ],
+                hoverBackgroundColor: [
+                    "red",
+                    "rgb(255, 229, 211)"
+                ],
+                borderWidth: [
+                    0, 0
+                ]
+            },
+
+
+        ],
+    },
+    options: {
+        cutoutPercentage: 80,
+        animation: {
+            animationRotate: true,
+            duration: 2000
+        },
+        legend: {
+            display: false
+        },
+        tooltips: {
+            enabled: false
+        }
+    }
+
+});
+// ========================================
+let ctx9 = document.getElementById('myChart9').getContext('2d');
+Chart.defaults.scale.gridLines.display = false;
+let myChart9 = new Chart(ctx9, {
+    type: 'doughnut',
+    data: {
+        labels: ["Twitter"],
+        datasets: [
+            {
+                data: [67, 33],
+                label: 'Twitter',
+                // data: [45,100],
+                backgroundColor: [
+                    "rgb(2, 160, 252)",
+                    "rgb(226, 251, 215)"
+                ],
+                hoverBackgroundColor: [
+                    "rgb(2, 160, 252)",
+                    "rgb(204, 248, 254)"
+                ],
+                borderWidth: [
+                    0, 0
+                ]
+            },
+
+
+        ],
+    },
+    options: {
+        cutoutPercentage: 80,
+        animation: {
+            animationRotate: true,
+            duration: 2000
+        },
+        legend: {
+            display: false
+        },
+        tooltips: {
+            enabled: false
+        }
+    }
+
+});
+
+
+
+
+
 
 
 

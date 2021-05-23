@@ -10,54 +10,93 @@ html(lang="en")
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
         title Document
     body 
-        header.header 
-            .header__search
-                input(type="search",placeholder="Search").input 
-                img(src="img/Search.png", alt="").header_icon
-            .header_humans 
-                .header_online 
-                    img(src="img/blackboy.png", alt="")
-                    .online
-                .header_online 
-                    img(src="img/bluegirl.png", alt="")
+        .left 
+            aside.aside
+                .aside_head 
+                    a   
+                        img(src="img/Logo.png").log
+                .images        
+                    -var names= ["img/icon1.png","img/icon2.png","img/icon3.png","img/icon4.png","img/icon5.png","img/icon6.png","img/icon7.png"]
+                    - for (var i = 0; i < names.length; ++i) {
+                    .aside__div    
+                        a
+                            img(src=names[i]).img
+                    -  }
+                .aside_footer 
+                    a   
+                        img(src="img/icon8.png").fot 
+        .right 
+            header.header 
+                .header__search
+                    input(type="search",placeholder="Search").input 
+                    img(src="img/Search.png", alt="").header_icon
+                .header_humans 
+                    .header_online 
+                        img(src="img/blackboy.png", alt="")
+                        .online
+                    .header_online 
+                        img(src="img/bluegirl.png", alt="")
 
-                .header_online 
-                    img(src="img/ochkiboy.png", alt="")
+                    .header_online 
+                        img(src="img/ochkiboy.png", alt="")
 
-                .header_online.plus
-                    img(src="img/plus.png", alt="").img_plus
+                    .header_online.plus
+                        img(src="img/plus.png", alt="").img_plus
 
 
-        main.main 
-            .main__header 
-                h1.main__author Be single minded
-                - var text="Every large design company whether it’s a multi-national branding"
-                p.main__text=text
-            .main__main 
-                .main__canvas 
-                    canvas(id="myChart").can
-                .main__canvas 
-                     canvas(id="myChart1").cans
-                .main__canvas 
-                    canvas(id="myChart2").can
-                .main__canvas 
-                    canvas(id="myChart3").can
-        aside.aside
-            .aside_head 
-                a   
-                    img(src="img/Logo.png").log
-            .images        
-                -var names= ["img/icon1.png","img/icon2.png","img/icon3.png","img/icon4.png","img/icon5.png","img/icon6.png","img/icon7.png"]
-                - for (var i = 0; i < names.length; ++i) {
-                .aside__div    
-                     a
-                        img(src=names[i]).img
-                -  }
-            .aside_footer 
-                a   
-                    img(src="img/icon8.png").fot 
-        footer.footer
-            .footer__canvas_left
-                canvas(id="myChart5").canvas
-            .footer__canvas_right 
+            main.main 
+                .main__header 
+                    h1.main__author Be single minded
+                    - var text="Every large design company whether it’s a multi-national branding"
+                    p.main__text=text
+                .main__main 
+                    .main__canvas 
+                        h1.main__canvas_text Text
+                        .line__sites__text
+                            - var sit =["Restless","Awake","Deep"]
+                            - var color1=["blue","red","yellow"]
+                            - for (var i = 0; i < sit.length; i++) {
+                            div(class=color1[i]) 
+                                span(class="sitetext1")=sit[i]
+                            - }
+                        canvas(id="myChart").can
+                    .main__canvas 
+                        h1.main__canvas_text Text
+                        canvas(id="myChart1").cans
+                    .main__canvas 
+                        h1.main__canvas_text Text
+                        canvas(id="myChart2").can
+                    .main__canvas 
+                        h1.main__canvas_text Text
+                        .line__sites2
+                            - var site2 =["Restless","Awake","Deep","Time"]
+                            - var color2=["red","yellow","green","blue"]
+                            - for (var i = 0; i < site2.length; i++) {
+                            div(class=color2[i]) 
+                                span(class="sitetext")=site2[i]
+                            - }
+                        canvas(id="myChart3").can
+
+
+            footer.footer
+                .footer__canvas_left
+                    canvas(id="myChart5").canvas
+                .footer__canvas_right  
+                    h1.main__canvas_text  Title
+                    .footer__canvas_right__canvas
+                        .line__sites
+                            - var site =["Instagram","Facebook","Google","Twitter"]
+                            - var color=["green","blue","red","galu"]
+                            - for (var i = 0; i < site.length; i++) {
+                            div(class=color[i]) 
+                                span(class="sitetext")=site[i]
+                            - }
+                    - var can=["myChart6","myChart7","myChart8","myChart9"]
+                    - var numb=["67%","46%","15%","67%"]
+                    .canvas__rigth_title
+                        - for (var i = 0; i < can.length; ++i) {   
+                        canvas(id=can[i])
+                        p.canas_pracent=numb[i]
+                        -  }
+                    p.footertext Every large design company whether it’s a multi-national branding corporation or a regular down at heel tatty magazine publisher needs to fill holes in the workforce.
         script(src="js/script.js") 
