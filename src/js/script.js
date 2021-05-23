@@ -1,6 +1,6 @@
-var ctx = document.getElementById('myChart').getContext('2d');
+let ctx = document.getElementById('myChart').getContext('2d');
 Chart.defaults.scale.gridLines.display = false;
-var myChart = new Chart(ctx, {
+let myChart = new Chart(ctx, {
     type: 'line',
     data: {
         labels: [1, 2, 3, 4],
@@ -46,9 +46,9 @@ var myChart = new Chart(ctx, {
 // ======================= chart line diagrms ====================
 
 
-var ctx = document.getElementById('myChart2').getContext('2d');
+let ctx1 = document.getElementById('myChart2').getContext('2d');
 Chart.defaults.scale.gridLines.display = false;
-var myChart = new Chart(ctx, {
+let myChart1 = new Chart(ctx1, {
     type: 'line',
     data: {
         labels: ["01", "02", "03", "04", "05", "06", "07"],
@@ -129,6 +129,74 @@ var myChart = new Chart(ctx, {
 
     }
 });
+
+// =================== chart circle ===================== 
+
+
+let ctx2 = document.getElementById('myChart3').getContext('2d');
+
+
+let myChart2 = new Chart(ctx2, {
+    type: 'pie',
+    data: {
+        labels: ["Rasless","Awake","Deep"],
+        datasets: [{
+            data: [10],
+            backgroundColor: [
+                'rgb(255, 178, 0)',
+                'rgb(255, 58, 41)',
+                'rgb(67, 57, 242)',
+            ],
+            borderColor: [
+                'rgb(255, 178, 0)',
+                'rgb(255, 58, 41)',
+                'rgb(67, 57, 242)',
+            ],
+            borderWidth: 1,
+        },
+            {
+                // data: [10,2,5],
+                backgroundColor: 'white',
+                borderColor: ["white"],
+                borderWidth: 3,
+            },
+            {
+                data: [50],
+                backgroundColor: "rgb(255, 58, 41)",
+                borderColor: ["rgb(255, 58, 41)"],
+                borderWidth: 1,
+            },
+            {
+                backgroundColor: 'white',
+                borderColor: ["white"],
+                borderWidth: 3,
+            },
+            {
+                data: [50],
+                backgroundColor: "rgb(67, 57, 242)",
+                borderColor: ["rgb(67, 57, 242)"],
+                borderWidth: 0.1,
+            },
+            {
+                data: [200],
+                backgroundColor: 'white',
+                borderColor: ["white"],
+                borderWidth: 3,
+                radius: 0,
+            },
+
+        ]
+    },
+
+
+});
+
+
+
+
+
+
+
 
 
 
