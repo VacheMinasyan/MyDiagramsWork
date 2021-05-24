@@ -51,7 +51,8 @@ html(lang="en")
                     p.main__text=text
                 .main__main 
                     .main__canvas 
-                        h1.main__canvas_text Text
+                        h1.main__canvas_text Text1
+                        canvas(id="myChart" width="194" height="194").can
                         .line__sites__text
                             - var sit =["Restless","Awake","Deep"]
                             - var color1=["blue","red","yellow"]
@@ -59,21 +60,31 @@ html(lang="en")
                             div(class=color1[i]) 
                                 span(class="sitetext1")=sit[i]
                             - }
-                        canvas(id="myChart").can
                     .main__canvas 
-                        h1.main__canvas_text Text
-                        canvas(id="myChart1").cans
+                        h1.main__canvas_text Text2
+                        .line__sites__text12 
+                            div.circle1
+                            span.span Restless
+                        canvas(id="myChart1" width="194" height="194").cans
                     .main__canvas 
-                        h1.main__canvas_text Text
+                        h1.main__canvas_text Text3
+                        .line__sites__text0 
+                            .circle2 
+                                .cirk1
+                                span.sites_text1 Restless 
+                            .circle3 
+                                .cirk2
+                                span.sites_text2 Awake 
+
                         canvas(id="myChart2").can
                     .main__canvas 
-                        h1.main__canvas_text Text
+                        h1.main__canvas_text Text4
                         .line__sites2
                             - var site2 =["Restless","Awake","Deep","Time"]
                             - var color2=["red","yellow","green","blue"]
                             - for (var i = 0; i < site2.length; i++) {
                             div(class=color2[i]) 
-                                span(class="sitetext")=site2[i]
+                            span(class="sitetext")=site2[i]
                             - }
                         canvas(id="myChart3").can
 

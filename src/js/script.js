@@ -53,8 +53,8 @@ let myChart3 = new Chart(ctx3, {
     data: {
         labels: ["01", "02", "03", "04", "05", "06", "07"],
         datasets: [{
-            labels: ["Rasless","Awake","Deep"],
-            data: [200, 400, 250,100,500,250, 250,250],
+            labels: ["Rasless", "Awake", "Deep"],
+            data: [200, 400, 250, 100, 500, 250, 250, 250],
             backgroundColor: 'transparent',
             borderColor: ["rgb(67, 57, 242)"],
             borderWidth: 3,
@@ -64,19 +64,19 @@ let myChart3 = new Chart(ctx3, {
         },
         {
             label: false,
-            data: [250,350,450,550, 425,300, 550,550],
+            data: [250, 350, 450, 550, 425, 300, 550, 550],
             backgroundColor: 'transparent',
             borderColor: ["rgb(255, 58, 41)"],
             borderWidth: 3,
-            radius:0,
+            radius: 0,
             lineTension: 0,
             fill: false
 
         },
-       
+
         {
             label: false,
-            data: [0, 100, -200, 200,450,450,450,450],
+            data: [0, 100, -200, 200, 450, 450, 450, 450],
             backgroundColor: 'transparent',
             borderColor: ["rgb(255, 178, 0)"],
             borderWidth: 3,
@@ -85,9 +85,9 @@ let myChart3 = new Chart(ctx3, {
             fill: false
 
         },
-         {
+        {
             label: false,
-            data: [50, -250,-25,200,-250,200,100,250],
+            data: [50, -250, -25, 200, -250, 200, 100, 250],
             backgroundColor: 'transparent',
             borderColor: ["rgb(52, 181, 58)"],
             borderWidth: 3,
@@ -112,7 +112,7 @@ let myChart3 = new Chart(ctx3, {
             xAxes: [
                 {
                     ticks: {
-                    
+
                         beginAtZero: true,
 
                     }
@@ -134,7 +134,9 @@ let myChart3 = new Chart(ctx3, {
 let ctx = document.getElementById('myChart').getContext('2d');
 let myChart = new Chart(ctx, {
     type: 'pie',
+    
     data: {
+        labels:["Restless","Awake","Deep"],
         datasets: [{
             data: [10],
             backgroundColor: [
@@ -149,35 +151,35 @@ let myChart = new Chart(ctx, {
             ],
             borderWidth: 1,
         },
-            {
-                backgroundColor: 'white',
-                borderColor: ["white"],
-                borderWidth: 3,
-            },
-            {
-                data: [50],
-                backgroundColor: "rgb(255, 58, 41)",
-                borderColor: ["rgb(255, 58, 41)"],
-                borderWidth: 1,
-            },
-            {
-                backgroundColor: 'white',
-                borderColor: ["white"],
-                borderWidth: 3,
-            },
-            {
-                data: [50],
-                backgroundColor: "rgb(67, 57, 242)",
-                borderColor: ["rgb(67, 57, 242)"],
-                borderWidth: 0.1,
-            },
-            {
-                data: [200],
-                backgroundColor: 'white',
-                borderColor: ["white"],
-                borderWidth: 3,
-                radius: 0,
-            },
+        {
+            backgroundColor: 'white',
+            borderColor: ["white"],
+            borderWidth: 3,
+        },
+        {
+            data: [50],
+            backgroundColor: "rgb(255, 58, 41)",
+            borderColor: ["rgb(255, 58, 41)"],
+            borderWidth: 1,
+        },
+        {
+            backgroundColor: 'white',
+            borderColor: ["white"],
+            borderWidth: 3,
+        },
+        {
+            data: [50],
+            backgroundColor: "rgb(67, 57, 242)",
+            borderColor: ["rgb(67, 57, 242)"],
+            borderWidth: 0.1,
+        },
+        {
+            data: [200],
+            backgroundColor: 'white',
+            borderColor: ["white"],
+            borderWidth: 3,
+            radius: 0,
+        },
 
         ]
     },
@@ -247,11 +249,11 @@ let myChart4 = new Chart(ctx4, {
         datasets: [
             {
                 label: 'Twitter',
-                data: [80, 60, 90, 200, 70, 200,200,230,200,240,130,270],
+                data: [80, 60, 90, 200, 70, 200, 200, 230, 200, 240, 130, 270],
                 backgroundColor: "blue",
                 borderColor: "blue",
                 borderWidth: 1,
-                borderRadius: 5,
+                borderRadius: Number.MAX_VALUE,
                 hoverBackgroundColor: "blue",
                 hoverBorderColor: "blue",
                 borderSkipped: false,
@@ -262,7 +264,7 @@ let myChart4 = new Chart(ctx4, {
                 backgroundColor: "green",
                 borderColor: "green",
                 borderWidth: 2,
-                borderRadius: 5,
+                borderRadius: Number.MAX_VALUE,
                 hoverBackgroundColor: "green",
                 hoverBorderColor: "green",
                 borderSkipped: false,
@@ -273,7 +275,7 @@ let myChart4 = new Chart(ctx4, {
                 backgroundColor: "rgb(255, 179, 0)",
                 borderColor: "rgb(255, 179, 0)",
                 borderWidth: 2,
-                borderRadius: 5,
+                borderRadius: Number.MAX_VALUE,
                 hoverBackgroundColor: "rgb(255, 179, 0)",
                 hoverBorderColor: "rgb(255, 179, 0)",
                 borderSkipped: false,
@@ -283,13 +285,13 @@ let myChart4 = new Chart(ctx4, {
     options: {
         tooltips: {
         },
-       
+
         scales: {
             xAxes: [{
-                stacked:true,
+                stacked: true,
             }],
             yAxes: [{
-                stacked:true,
+                stacked: true,
             }]
         }
     }
