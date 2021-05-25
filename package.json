@@ -2,33 +2,49 @@
   "dependencies": {
     "browser-sync": "^2.26.14",
     "chart.js": "^3.2.1",
-    "chartist": "^0.11.4",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-concat-js": "^0.1.0",
+    "gulp-css-minify": "^0.9.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-favicons": "^3.0.0",
+    "gulp-flatten": "^0.4.0",
+    "gulp-fonter": "^0.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
-    "gulp-minify-css": "^1.2.4",
+    "gulp-js-minify": "^0.0.3",
+    "gulp-minify": "^3.1.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
     "gulp-pug": "^4.0.1",
-    "gulp-uglify": "^3.0.2"
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-spritesmith": "^0.0.2",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-svgo": "^2.2.1",
+    "gulp-ttf2woff": "^1.1.1",
+    "gulp-ttf2woff2": "^4.0.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
+    "gulp.spritesmith": "^6.12.1",
+    "node-sass": "^4.14.1",
+    "npm": "^7.13.0",
+    "svgo": "^1.3.2",
+    "through2": "^2.0.5"
   },
-  "name": "diagrams",
+  "name": "teamarshak",
   "version": "1.0.0",
-  "main": "index.js",
-  "devDependencies": {},
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/VacheMinasyan/MyDiagramsWork.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/VacheMinasyan/MyDiagramsWork/issues"
-  },
-  "homepage": "https://github.com/VacheMinasyan/MyDiagramsWork#readme",
   "description": ""
 }
