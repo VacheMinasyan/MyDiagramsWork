@@ -4,7 +4,7 @@
 .icon-Icon4,
 .icon-Icon5 {
   background-image: url(sprite.png);
-  background-position: -140px -88px;
+  background-position: 0 -184px;
   width: 26px;
   height: 26px;
 }
@@ -13,22 +13,22 @@
 .icon-Icon3,
 .icon-Icon4,
 .icon-Icon5 {
-  background-position: -80px -114px;
+  background-position: -26px -184px;
 }
 
 .icon-Icon3,
 .icon-Icon4,
 .icon-Icon5 {
-  background-position: -106px -114px;
+  background-position: -52px -184px;
 }
 
 .icon-Icon4,
 .icon-Icon5 {
-  background-position: -132px -114px;
+  background-position: -78px -184px;
 }
 
 .icon-Icon5 {
-  background-position: -158px -114px;
+  background-position: -104px -184px;
 }
 
 .icon-Icon6,
@@ -37,7 +37,7 @@
 .icon-Logo,
 .icon-Search {
   background-image: url(sprite.png);
-  background-position: 0 -158px;
+  background-position: -130px -184px;
   width: 26px;
   height: 26px;
 }
@@ -46,24 +46,24 @@
 .icon-Icon8,
 .icon-Logo,
 .icon-Search {
-  background-position: -26px -158px;
+  background-position: -156px -184px;
 }
 
 .icon-Icon8,
 .icon-Logo,
 .icon-Search {
-  background-position: -52px -158px;
+  background-position: -182px -184px;
 }
 
 .icon-Logo,
 .icon-Search {
-  background-position: -44px -114px;
+  background-position: -184px -132px;
   width: 36px;
   height: 36px;
 }
 
 .icon-Search {
-  background-position: -78px -158px;
+  background-position: -228px 0;
   width: 24px;
   height: 24px;
 }
@@ -74,7 +74,7 @@
 .icon-plus,
 .icon-sprite {
   background-image: url(sprite.png);
-  background-position: -140px 0;
+  background-position: -184px 0;
   width: 44px;
   height: 44px;
 }
@@ -83,26 +83,26 @@
 .icon-ochkiboy,
 .icon-plus,
 .icon-sprite {
-  background-position: -140px -44px;
+  background-position: -184px -44px;
 }
 
 .icon-ochkiboy,
 .icon-plus,
 .icon-sprite {
-  background-position: 0 -114px;
+  background-position: -184px -88px;
 }
 
 .icon-plus,
 .icon-sprite {
-  background-position: -166px -88px;
+  background-position: -228px -24px;
   width: 16px;
   height: 16px;
 }
 
 .icon-sprite {
   background-position: 0 0;
-  width: 140px;
-  height: 114px;
+  width: 184px;
+  height: 184px;
 }
 body {
   margin: 0;
@@ -124,7 +124,7 @@ body {
 }
 
 .right {
-  padding: 50px;
+  padding: 5px;
   position: relative;
   max-width: 1450px;
   background-color: #f8f8f8ff;
